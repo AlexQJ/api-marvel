@@ -12,7 +12,7 @@ document.querySelector('#search').addEventListener('click',()=>{
 
         results.forEach((character, index) => {
             lista_busqueda.innerHTML += `
-                <div class="card" style="width:20%;">
+                <div class="card">
                     <img src="${character.thumbnail.path}.${character.thumbnail.extension}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${character.name}</h5>
@@ -44,7 +44,7 @@ const getCharacters = async () => {
   
   results.forEach((character, index) => {
     contenedor.innerHTML += `
-        <div class="card" style="width:20%;">
+        <div class="card">
             <img src="${character.thumbnail.path}.${character.thumbnail.extension}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${character.name}</h5>
