@@ -80,10 +80,12 @@ i.favActive{
     border-color: transparent transparent var(--fondo) transparent;
 }
 
+
 .card-body:hover{
     background-color: #e62429;
     color: #fff;
 }
+
 #search{
     border: none;
     border-radius: 2px;
@@ -136,6 +138,29 @@ button:hover {
 }
 
 @media (max-width: 700px) {
+    .container.search{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #search{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    #search:hover{
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -moz-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        -o-transform: scale(1.01);
+}
+    #search_input{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    
 
     .card{
         width: 60%;
